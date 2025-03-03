@@ -1,0 +1,17 @@
+.header-title {
+    position: relative;
+
+    max-width: 353px;
+    padding-left: var(--indent-container-left);
+
+    &::before {
+        position: absolute;
+        content: '';
+        inset: 0;
+        right: auto;
+        
+        width: 5px;
+
+        background: var(--accent-gradient);
+    }
+}

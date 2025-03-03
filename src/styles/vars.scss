@@ -1,0 +1,19 @@
+:root {
+    // TEXT
+    --text-primary: #42567A;
+
+    // BG
+    --bg-primary: white;
+    
+    // BORDER
+    --border-category: rgba(48, 62, 88, .5);
+    --border-btn: rgb(66, 86, 122, .5);
+
+    // INDENTS
+    --indent-container-left: 80px;
+
+    // ACCENT
+    --accent-blue: #5D5FEF;
+    --accent-pink: #EF5DA8;
+    --accent-gradient: linear-gradient(to bottom, var(--accent-blue), var(--accent-pink));
+}

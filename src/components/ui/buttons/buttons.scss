@@ -1,0 +1,13 @@
+.btn {
+
+    &_arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1.05rem 1.1rem;
+
+        border: 1px solid var(--border-btn);
+        border-radius: 50%;
+    }
+}

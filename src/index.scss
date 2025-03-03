@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: 'PT Sans';
+  font-weight: 400;
+
+  color: var(--text-primary);
+  line-height: 1.2;
+  background-color: var(--bg-primary);
+}
+
+button {
+  cursor: pointer;
+
+  background: none;
+  outline: none;
+  border: none;
+
+  &:disabled {
+    pointer-events: none;
+    opacity: .5;
+  }
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}

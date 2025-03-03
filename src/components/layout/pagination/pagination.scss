@@ -1,0 +1,16 @@
+.pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    &_btns {
+        display: flex;
+        gap: 1.25rem;
+    }
+
+    &_counter {
+        font-size: 0.875rem;
+    }
+
+    z-index: 3;
+}
