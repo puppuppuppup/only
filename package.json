@@ -3,9 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "scripts": {
-        "dev": "cross-env SERVE=true webpack serve",
-        "start": "webpack serve --mode=production",
-        "clean": "rd /s /q dist"
+        "start": "cross-env SERVE=true webpack serve"
     },
     "dependencies": {
         "@babel/core": "^7.26.9",
