@@ -5,7 +5,7 @@ export const Container = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 393px;
 
     max-width: 1440px;
     min-height: 100vh;
@@ -26,5 +26,10 @@ export const Container = styled.div`
         border-bottom: none;
 
         z-index: -1;
+    }
+
+    @media screen and (max-width: 1000px) {
+        padding-block: 59px 13px;
+        gap: 1rem;
     }
 `;

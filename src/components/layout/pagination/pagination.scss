@@ -3,14 +3,27 @@
     flex-direction: column;
     gap: 1.25rem;
 
+    width: fit-content;
+    padding-inline: var(--indent-container-inner);
+
+    z-index: 20;
+
     &_btns {
         display: flex;
         gap: 1.25rem;
+
+        width: fit-content;
+
+        @media screen and (max-width: 1000px) {
+            gap: .5rem;
+        }
     }
 
     &_counter {
         font-size: 0.875rem;
     }
 
-    z-index: 3;
+    @media screen and (max-width: 1000px) {
+        gap: .66rem;
+    }
 }

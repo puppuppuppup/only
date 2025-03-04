@@ -1,19 +1,26 @@
 :root {
     // TEXT
     --text-primary: #42567A;
+    --text-year: #3877EE;
 
     // BG
-    --bg-primary: white;
-    
+    --bg-primary: #F4F5F9;
+    --bg-hover: white;
+
     // BORDER
     --border-category: rgba(48, 62, 88, .5);
     --border-btn: rgb(66, 86, 122, .5);
+    --border-separator: #C7CDD9;
 
     // INDENTS
-    --indent-container-left: 80px;
+    --indent-container-inner: 80px;
 
     // ACCENT
     --accent-blue: #5D5FEF;
     --accent-pink: #EF5DA8;
     --accent-gradient: linear-gradient(to bottom, var(--accent-blue), var(--accent-pink));
+
+    @media screen and (max-width: 1000px) {
+        --indent-container-inner: 20px;
+    }
 }

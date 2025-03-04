@@ -2,7 +2,12 @@
     position: relative;
 
     max-width: 353px;
-    padding-left: var(--indent-container-left);
+    padding-left: var(--indent-container-inner);
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1.25rem;
+        max-width: 123px;
+    }
 
     &::before {
         position: absolute;
@@ -13,5 +18,9 @@
         width: 5px;
 
         background: var(--accent-gradient);
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
     }
 }

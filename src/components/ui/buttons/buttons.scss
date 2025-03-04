@@ -1,13 +1,35 @@
 .btn {
 
     &_arrow {
+        --size: 50px;
+
         display: flex;
         justify-content: center;
         align-items: center;
 
-        padding: 1.05rem 1.1rem;
+        width: var(--size);
+        height: var(--size);
 
         border: 1px solid var(--border-btn);
         border-radius: 50%;
+
+        transition: background-color .15s ease-in-out;
+
+        &:hover {
+            background-color: var(--bg-hover);
+        }
+
+        @media screen and (max-width: 1000px) {
+            --size: 25px;
+
+            svg {
+                width: 5px;
+                height: 6px;
+            }
+
+            path {
+                stroke-width: 4px;
+            }
+        }
     }
 }

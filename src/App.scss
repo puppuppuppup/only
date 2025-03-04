@@ -5,6 +5,20 @@
         flex-direction: column;
         gap: 3.5rem;
 
-        padding-left: var(--indent-container-left);
+        @media screen and (max-width: 1000px) {
+            position: relative;
+            
+            flex-direction: column-reverse;
+            gap: 4.875rem;
+        }
     }
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
 }

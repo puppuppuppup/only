@@ -1,8 +1,12 @@
 .categories {
-    --indent-top: 44%;
+    --indent-top: 480px;
 
     position: absolute;
     inset: 0;
+
+    @media screen and (max-width: 1000px) {
+        position: relative;
+    }
 
     &_border {
         position: absolute;
@@ -26,9 +30,24 @@
 
             transform: translateX(-50%);
         }
+
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
     }
 
     &_circle {
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 50%;
+        border: 1px solid var(--text-primary);
+
+        opacity: .2;
+
+        z-index: 1;
 
         &_container {
             --circle-size: 530px;
@@ -41,17 +60,30 @@
             height: var(--circle-size);
 
             transform: translate(-50%, -50%);
+
+            @media screen and (max-width: 1000px) {
+                --circle-size: auto;
+
+                position: relative;
+                top: auto;
+                left: auto;
+
+                display: flex;
+                gap: 1rem;
+
+                padding-inline: var(--indent-container-inner);
+
+                transform: none;
+            }
+
+            @media screen and (max-width: 400px) {
+                justify-content: center;
+            }
         }
 
-        width: 100%;
-        height: 100%;
-
-        border-radius: 50%;
-        border: 1px solid var(--text-primary);
-
-        opacity: .2;
-
-        z-index: 1;
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
     }
 
     &_year {
@@ -74,6 +106,24 @@
             left: calc(50% + var(--year-indent));
             color: var(--accent-pink);
         }
+
+        @media screen and (max-width: 1000px) {
+            position: relative;
+            top: auto;
+
+            margin-block: 3.5rem 1rem;
+
+            font-size: 3.5rem;
+
+            transform: none;
+
+            &.max {
+                left: auto;
+            }
+            &.min {
+                right: auto;
+            }
+        }
     }
 }
 
@@ -92,6 +142,19 @@
         align-items: flex-start;
 
         transition: transform var(--rotate-duration) ease-in-out;
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &_name_mobile {
+        display: none;
+        font-weight: 700;
+
+        @media screen and (max-width: 1000px) {
+            display: block;
+        }
     }
 
     &_circle {

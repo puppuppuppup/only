@@ -29,6 +29,8 @@ button {
   outline: none;
   border: none;
 
+  transition: opacity .15s ease-in-out;
+
   &:disabled {
     pointer-events: none;
     opacity: .5;

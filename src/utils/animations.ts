@@ -1,9 +1,10 @@
 import { RefObject } from 'react';
+import { ROTATE_ANIMATION_DURATION_MS } from '../constants/animations';
 
 export const animateNumber = (
     ref: RefObject<HTMLSpanElement | null>,
     targetNumber: number,
-    duration = 1000,
+    duration = ROTATE_ANIMATION_DURATION_MS,
 ) => {
     if (!ref.current) {
         return;
