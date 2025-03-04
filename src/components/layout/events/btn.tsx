@@ -1,3 +1,4 @@
+import React from 'react';
 import { SwiperClass, useSwiper } from 'swiper/react';
 import { ArrowSliderIcon } from '../../icons/arrow-slider';
 import cn from 'classnames';

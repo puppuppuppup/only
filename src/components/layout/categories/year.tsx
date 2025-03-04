@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useRef } from 'react';
 import { animateNumber } from '../../../utils/animations';
 import cn from 'classnames';

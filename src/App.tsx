@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { Categories } from './components/layout/categories/categories';
 import { CategoriesPagination } from './components/layout/pagination/pagination';

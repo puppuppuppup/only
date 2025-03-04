@@ -1,3 +1,4 @@
+import React from 'react';
 import { SliderBtn, TSliderBtnProps } from './btn';
 
 export const SliderBtns = ({ swiperInstance, progress }: TSliderBtnProps) => {

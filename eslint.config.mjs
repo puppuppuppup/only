@@ -13,6 +13,7 @@ export default tsEslint.config(eslint.configs.recommended, tsEslint.configs.reco
         'no-unused-vars': 'off',
         'no-empty': 'off',
         'no-array-constructor': 'off',
+        'no-undef': 'off',
         '@typescript-eslint/no-unused-vars': [
             'warn',
             { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },

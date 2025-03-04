@@ -1,3 +1,4 @@
+import React from 'react';
 import { TCategory } from '../../../types/categories';
 import { SliderBtns } from './btns';
 import './slider.scss';

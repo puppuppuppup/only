@@ -1,3 +1,4 @@
+import React from 'react';
 import { CATEGORIES } from '../../../data/categories';
 import { formatNumberToDoubleDigit } from '../../../utils/formatters';
 import { ArrowBtn } from '../../ui/buttons/arrow';

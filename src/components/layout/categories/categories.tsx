@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import './categories.scss';
 import { CATEGORIES } from '../../../data/categories';
