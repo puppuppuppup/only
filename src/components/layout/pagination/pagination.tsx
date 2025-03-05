@@ -1,7 +1,6 @@
-import React from 'react';
-import { CATEGORIES } from '../../../data/categories';
-import { formatNumberToDoubleDigit } from '../../../utils/formatters';
-import { ArrowBtn } from '../../ui/buttons/arrow';
+import { CATEGORIES } from '../../../data/categories.ts';
+import { formatNumberToDoubleDigit } from '../../../utils/formatters.ts';
+import { ArrowBtn } from '../../ui/buttons/arrow.tsx';
 import './pagination.scss';
 
 type Props = {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { SVGProps } from 'react';
 
 export const ArrowSliderIcon = (attributes: SVGProps<SVGSVGElement>) => {

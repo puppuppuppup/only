@@ -1,7 +1,7 @@
 import React from 'react';
-import { TCategory } from '../../../types/categories';
+import { TCategory } from '../../../types/categories.ts';
 import cn from 'classnames';
-import { ROTATE_ANIMATION_DURATION_MS } from '../../../constants/animations';
+import { ROTATE_ANIMATION_DURATION_MS } from '../../../constants/animations.ts';
 
 type Props = {
     category: TCategory;
@@ -15,10 +15,12 @@ export const Category = ({ category, rotateDegree, onChoose, index, isChosen }: 
     return (
         <div
             className='category_container'
-            style={{
-                '--rotate-duration': `${ROTATE_ANIMATION_DURATION_MS / 1000}s`,
-                transform: `rotate(${rotateDegree}deg)`,
-            } as React.CSSProperties}
+            style={
+                {
+                    '--rotate-duration': `${ROTATE_ANIMATION_DURATION_MS / 1000}s`,
+                    transform: `rotate(${rotateDegree}deg)`,
+                } as React.CSSProperties
+            }
         >
             <div
                 className={cn('category_circle', isChosen && 'chosen')}

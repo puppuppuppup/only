@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CATEGORIES } from '../data/categories';
+import { CATEGORIES } from '../data/categories.ts';
 
 export const useChosenCategory = (chosenIndex: number) => {
     const [chosenCategory, setChosenCategory] = useState(CATEGORIES[chosenIndex]);

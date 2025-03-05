@@ -1,5 +1,4 @@
-import React from 'react';
-import { SliderBtn, TSliderBtnProps } from './btn';
+import { SliderBtn, TSliderBtnProps } from './btn.tsx';
 
 export const SliderBtns = ({ swiperInstance, progress }: TSliderBtnProps) => {
     return (

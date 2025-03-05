@@ -1,4 +1,4 @@
-import { TCategory } from '../types/categories';
+import { TCategory } from '../types/categories.ts';
 
 export const CATEGORIES: TCategory[] = [
     {

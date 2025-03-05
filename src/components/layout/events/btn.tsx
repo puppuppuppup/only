@@ -1,6 +1,5 @@
-import React from 'react';
 import { SwiperClass, useSwiper } from 'swiper/react';
-import { ArrowSliderIcon } from '../../icons/arrow-slider';
+import { ArrowSliderIcon } from '../../icons/arrow-slider.tsx';
 import cn from 'classnames';
 import './slider.scss';
 import { useEffect, useState } from 'react';

@@ -1,5 +1,5 @@
 import { RefObject } from 'react';
-import { ROTATE_ANIMATION_DURATION_MS } from '../constants/animations';
+import { ROTATE_ANIMATION_DURATION_MS } from '../constants/animations.ts';
 
 export const animateNumber = (
     ref: RefObject<HTMLSpanElement | null>,

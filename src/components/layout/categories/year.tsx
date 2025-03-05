@@ -1,6 +1,5 @@
-import React from 'react';
 import { useEffect, useRef } from 'react';
-import { animateNumber } from '../../../utils/animations';
+import { animateNumber } from '../../../utils/animations.ts';
 import cn from 'classnames';
 
 type Props = {

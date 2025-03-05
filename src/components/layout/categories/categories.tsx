@@ -1,10 +1,9 @@
-import React from 'react';
 import { useState } from 'react';
 import './categories.scss';
-import { CATEGORIES } from '../../../data/categories';
-import { Category } from './category';
-import { CategoryYear } from './year';
-import { useChosenCategory } from '../../../hooks/useChosenCategory';
+import { CATEGORIES } from '../../../data/categories.ts';
+import { Category } from './category.tsx';
+import { CategoryYear } from './year.tsx';
+import { useChosenCategory } from '../../../hooks/useChosenCategory.ts';
 
 const DEGREES_PER_CIRCLE = 360;
 const START_ROTATE_INDENT = 20;

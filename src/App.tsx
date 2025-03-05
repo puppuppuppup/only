@@ -1,14 +1,13 @@
-import React from 'react';
-import { useEffect, useRef, useState } from 'react';
-import { Categories } from './components/layout/categories/categories';
-import { CategoriesPagination } from './components/layout/pagination/pagination';
-import { Header } from './components/layout/header/header';
-import { Container } from './components/ui/container';
 import './App.scss';
-import { EventsSlider } from './components/layout/events/slider';
-import { useChosenCategory } from './hooks/useChosenCategory';
-import { CATEGORIES } from './data/categories';
-import { ROTATE_ANIMATION_DURATION_MS } from './constants/animations';
+import { useEffect, useRef, useState } from 'react';
+import { Categories } from './components/layout/categories/categories.tsx';
+import { CategoriesPagination } from './components/layout/pagination/pagination.tsx';
+import { Header } from './components/layout/header/header.tsx';
+import { Container } from './components/ui/container.tsx';
+import { EventsSlider } from './components/layout/events/slider.tsx';
+import { useChosenCategory } from './hooks/useChosenCategory.ts';
+import { CATEGORIES } from './data/categories.ts';
+import { ROTATE_ANIMATION_DURATION_MS } from './constants/animations.ts';
 
 function App() {
     const [chosenCategoryIndex, setChosenCategoryIndex] = useState(0);

@@ -1,6 +1,5 @@
-import React from 'react';
 import { ButtonHTMLAttributes } from 'react';
-import { ArrowIcon } from '../../icons/arrow';
+import { ArrowIcon } from '../../icons/arrow.tsx';
 import cn from 'classnames';
 import './buttons.scss';
 

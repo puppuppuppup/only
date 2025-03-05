@@ -1,13 +1,12 @@
-import React from 'react';
-import { TCategory } from '../../../types/categories';
-import { SliderBtns } from './btns';
+import { TCategory } from '../../../types/categories.ts';
+import { SliderBtns } from './btns.tsx';
 import './slider.scss';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Controller, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { useEffect, useState } from 'react';
 import cn from 'classnames';
-import { ROTATE_ANIMATION_DURATION_MS } from '../../../constants/animations';
+import { ROTATE_ANIMATION_DURATION_MS } from '../../../constants/animations.ts';
 
 type Props = {
     category: TCategory;
